@@ -6,83 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/records.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.26.1/axios.min.js"></script>
     <title>记录的内容</title>
 </head>
 <body>
     <div class="main">
         <nav>
             <div class="blog-name">Peter Chen's Blog - 记录</div>
-            <div style="display: inline-block;font-size: large;"><b>&nbsp&nbsp&nbsp服务器带宽有限 请勿频繁访问</b></div>
             <div class="nav-menu">
-                <span class="nav-menu-clild"><a href="./index.html" class="imp"><img src="./pics/index.png" class="menu-icon"><span class="menu-child-text">主页</span></a></span>
-                <span class="nav-menu-clild"><a href="./records.html" class="imp"><img src="./pics/records.png" class="menu-icon"><span class="menu-child-text">记录</span></a></span>
-                <span class="nav-menu-clild"><a href="./about.html" class="imp"><img src="./pics/about.png" class="menu-icon"><span class="menu-child-text">关于</span></a></span>
+                <span class="nav-menu-clild"><a href="./index.html" class="imp"><img src="./pics/index.png" class="menu-icon"></a><span class="menu-child-text"><a href="./index.html" class="imp">主页</a></span></span>
+                <span class="nav-menu-clild"><a href="./records.html" class="imp"><img src="./pics/records.png" class="menu-icon"></a><span class="menu-child-text"><a href="./records.html" class="imp">记录</a></span></span>
+                <span class="nav-menu-clild"><a href="./about.html" class="imp"><img src="./pics/about.png" class="menu-icon"></a><span class="menu-child-text"><a href="./about.html" class="imp">关于</a></span></span>
             </div>
         </nav>
 
-        <main>
-            <a href="http://101.43.67.38:9000/blog/post/chen2001/HTML"><div class="blog">
+        <div class="main-text">
+            <div style="display: inline-block;font-size: x-large;color: red;width: 100%;text-align: center;margin-top: 2%;"><b>服务器带宽有限 请勿频繁访问</b></div>
+            <a href="#" class="sub" target="_blank"><div class="blog">
                 <img src="./pics/html5.jfif" alt="" class="blog-pic">
                 <div class="blog-sub-content">
-                    <h2>HTML5</h2>
-                    <p>HTML5是构建Web内容的一种语言描述方式。HTML5是互联网的下一代标准，是构建以及呈现互联网内容的一种语言方式．被认为是互联网的核心技术之一。HTML产生于1990年，1997年HTML4成为互联网标准，并广泛应用于互联网应用的开发。</p>
-                    <p>HTML5是Web中核心语言HTML的规范，用户使用任何手段进行网页浏览时看到的内容原本都是HTML格式的，在浏览器中通过一些技术处理将其转换成为了可识别的信息。HTML5在从前HTML4.01的基础上进行了一定的改进，虽然技术人员在开发过程中可能不会将这些新技术投入应用，但是对于该种技术的新特性，网站开发技术人员是必须要有所了解的。</p>
+                    <div class="in-text">
+                    <h2>SubTitle</h2>
+                    <p>Descriptions</p>
+                    </div>
                 </div>
             </div></a>
-            <a href="http://101.43.67.38:9000/blog/post/chen2001/CSS"><div class="blog">
+            <a href="#" class="sub" target="_blank"><div class="blog">
                 <img src="./pics/css3.jfif" alt="" class="blog-pic">
                 <div class="blog-sub-content">
-                    <h2>CSS3</h2>
-                    <p>CSS3是CSS（层叠样式表）技术的升级版本，于1999年开始制订，2001年5月23日W3C完成了CSS3的工作草案，主要包括盒子模型、列表模块、超链接方式、语言模块、背景和边框、文字特效、多栏布局等模块。</p>
-                    <p>CSS演进的一个主要变化就是W3C决定将CSS3分成一系列模块。浏览器厂商按CSS节奏快速创新，因此通过采用模块方法，CSS3规范里的元素能以不同速度向前发展，因为不同的浏览器厂商只支持给定特性。但不同浏览器在不同时间支持不同特性，这也让跨浏览器开发变得复杂。</p>
+                    <div class="in-text">
+                    <h2>SubTitle</h2>
+                    <p>Descriptions</p>
+                    </div>
                 </div>
             </div></a>
-            <a href="http://101.43.67.38:9000/blog/post/chen2001/JavaScript"><div class="blog">
+            <a href="#" class="sub" target="_blank"><div class="blog">
                 <img src="./pics/js.png" alt="" class="blog-pic">
                 <div class="blog-sub-content">
-                    <h2>JavaScript</h2>
-                    <p>JavaScript（简称“JS”） 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。虽然它是作为开发Web页面的脚本语言而出名，但是它也被用到了很多非浏览器环境中，JavaScript 基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式、声明式、函数式编程范式。</p>
-                    <p>JavaScript在1995年由Netscape公司的Brendan Eich，在网景导航者浏览器上首次设计实现而成。因为Netscape与Sun合作，Netscape管理层希望它外观看起来像Java，因此取名为JavaScript。但实际上它的语法风格与Self及Scheme较为接近。</p>
+                    <div class="in-text">
+                    <h2>SubTitle</h2>
+                    <p>Descriptions</p>
+                    </div>
                 </div>
             </div></a>
-            <a href="./AjaxNote.html"><div class="blog">
+            <a href="#" class="sub" target="_blank"><div class="blog">
                 <img src="./pics/ajax.png" alt="" class="blog-pic">
                 <div class="blog-sub-content">
-                    <h2>AJAX</h2>
-                    <p>Ajax即Asynchronous Javascript And XML（异步JavaScript和XML）在 2005年被Jesse James Garrett提出的新术语，用来描述一种使用现有技术集合的‘新’方法，包括: HTML 或 XHTML, CSS, JavaScript, DOM, XML, XSLT, 以及最重要的XMLHttpRequest。
-                        使用Ajax技术网页应用能够快速地将增量更新呈现在用户界面上，而不需要重载（刷新）整个页面，这使得程序能够更快地回应用户的操作。</p>
+                    <div class="in-text">
+                    <h2>SubTitle</h2>
+                    <p>Descriptions</p>
+                    </div>
                 </div>
             </div></a>
-            <a href="http://101.43.67.38:9000/blog/post/chen2001/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E8%80%83%E8%AF%95%E7%AC%94%E8%AE%B0"><div class="blog">
-                <img src="./pics/data-structure.png" alt="" class="blog-pic">
-                <div class="blog-sub-content">
-                    <h2>数据结构</h2>
-                    <p>数据结构(data structure)是带有结构特性的数据元素的集合，它研究的是数据的逻辑结构和数据的物理结构以及它们之间的相互关系，并对这种结构定义相适应的运算，设计出相应的算法，并确保经过这些运算以后所得到的新结构仍保持原来的结构类型。
-                        简而言之，数据结构是相互之间存在一种或多种特定关系的数据元素的集合，即带“结构”的数据元素的集合。“结构”就是指数据元素之间存在的关系，分为逻辑结构和存储结构。</p>
+            <footer>
+                <span id="foot">
+                <div id="visit">当前累计访问量：</div>
+                <div>推荐使用基于Chromium内核的Microsoft<sup>©</sup>Edge浏览器以获得最佳兼容性</div>
+                <div>不为移动端设计，请使用PC或平板访问</div>
+                <div>推荐分辨率：1366×768或以上的16:9/16:10设备</div>
+                <div class="copyright">©2022 - 2023 By Peter Chen</div>
+                </span>
+                <div class="recordInfo">
+                    <img src="./pics/gxb.png" class="police"><a class="imp" href="https://beian.miit.gov.cn" target="_blank"> 你的备案号 </a>
+                    <!-- &nbsp;|&nbsp;
+                    <img src="./pics/police.png" class="police"><a class="imp" href="#" target="_blank"> 你的公安审批号 </a> -->
                 </div>
-            </div></a>
-            <a href="http://101.43.67.38:9000/blog/post/chen2001/79861e73b579"><div class="blog">
-                <img src="./pics/ML.jfif" alt="" class="blog-pic">
-                <div class="blog-sub-content">
-                    <h2>基于R的GBM和随机森林</h2>
-                    <p>Gradient Boosting Machine(GBM) ，梯度上升算法是一种对于梯度算法的增强。</p>
-                    <p>在GBM以外还有一种拟合效果强大但是使用极其简单的模型，需要调整的参数不多，他就是随机森林。与GBM不同的是，随机森林每棵树的深度不是固定的，需要调整的参数往往也只有：树的数目、最大节点。其中，最大节点数决定了树的深度，随机森林也不需要人工调参，模型自己选择的默认参数已经可以达到较好的效果。</p>
-                </div>
-            </div></a>
-            
-        </main>
-
-        <footer>
-            <div>推荐使用基于Chromium内核的Microsoft<sup>©</sup>Edge浏览器以获得最佳兼容性</div>
-            <div>推荐分辨率：1024×768或以上的16:9设备</div>
-            <div class="copyright">©2022 - 2023 By Peter_Chen</div>
-            <div class="recordInfo">
-                <a class="imp" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=????" target="_blank">沪公网安备????号(审核中)</a>
-            </div>
-        </footer>
+            </footer>
+        </div>  
     </div>
-    
-
-    
 </body>
+<script>
+    window.onload = function (){
+            // axios.get('Your Request API', {}).then(res=>{
+            //     $("#visit").append(res.data);
+            // })
+            $("#visit").append("Please set your counter API.");
+        }
+    $(".blog-name").click(function(){
+        alert("点我的标题干嘛？");
+    })
+    $("#foot").click(function(){
+        alert("每次进入首页都会为访问量+1！顺便大力推荐微软的新Edge！")
+    })
+</script>
 </html>

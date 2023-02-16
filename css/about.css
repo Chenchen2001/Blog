@@ -1,9 +1,7 @@
-main{
-    margin: 0;
-    width: 90%;
-    height: 80vh;
+.main-text{
     margin-left: 5%;
     margin-right: 5%;
+    display: block;
 }
 
 p{
@@ -23,8 +21,4 @@ a:hover{
 a:visited{
     text-decoration: none;
     color: rgb(173, 43, 43);
-}
-
-footer{
-    margin-top: 30vh;
 }

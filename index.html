@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.26.1/axios.min.js"></script>
     <title>博客首页</title>
 </head>
 <body>
@@ -13,27 +16,27 @@
         <nav>
             <div class="blog-name">Peter Chen's Blog - 主页</div>
             <div class="nav-menu">
-                <span class="nav-menu-clild"><a href="./index.html" class="imp"><img src="./pics/index.png" class="menu-icon"><span class="menu-child-text">主页</span></a></span>
-                <span class="nav-menu-clild"><a href="./records.html" class="imp"><img src="./pics/records.png" class="menu-icon"><span class="menu-child-text">记录</span></a></span>
-                <span class="nav-menu-clild"><a href="./about.html" class="imp"><img src="./pics/about.png" class="menu-icon"><span class="menu-child-text">关于</span></a></span>
+                <span class="nav-menu-clild"><a href="./index.html" class="imp"><img src="./pics/index.png" class="menu-icon"></a><span class="menu-child-text"><a href="./index.html" class="imp">主页</a></span></span>
+                <span class="nav-menu-clild"><a href="./records.html" class="imp"><img src="./pics/records.png" class="menu-icon"></a><span class="menu-child-text"><a href="./records.html" class="imp">记录</a></span></span>
+                <span class="nav-menu-clild"><a href="./about.html" class="imp"><img src="./pics/about.png" class="menu-icon"></a><span class="menu-child-text"><a href="./about.html" class="imp">关于</a></span></span>
             </div>
         </nav>
 
         <main>
             <div class="left">
-                <a href="http://101.43.67.38:9000" class="lenote-service">
+                <a href="#" class="lenote-service">
                     <div class="leanote-site">
-                    <div class="left-sub-title"><h3 style="margin: 0;">我的云笔记平台</h3></div>
+                    <div class="left-sub-title"><h3 style="margin: 0;">Title</h3></div>
                     </div>
                 </a>
-                <a href="http://101.43.67.38/MainRegister1.html" class="mis-service">
+                <a href="h#" class="mis-service">
                     <div class="mis-site">
-                    <div class="left-sub-title"><h3 style="margin: 0; font-size: xx-large;">教务管理系统（课程用）</h3></div>
+                    <div class="left-sub-title"><h3 style="margin: 0; font-size: xx-large;">Title</h3></div>
                     </div>
                 </a>
-                <a href="mailto:chenchen2001@shu.edu.cn" class="mc-service">
+                <a href="mailto:" class="mc-service">
                     <div class="mc-site">
-                    <div class="left-sub-title"><h3 style="margin: 0; font-size: xx-large;">想玩我的世界？联系我！</h3></div>
+                    <div class="left-sub-title"><h3 style="margin: 0; font-size: xx-large;">Title</h3></div>
                     </div>
                 </a>
             </div>
@@ -42,7 +45,7 @@
                 <div class="personal-info">
                     <img src="./pics/portrait.png" alt="" class="portrait">
                     <div style="font-style:normal; font-size: x-large;"><b>Peter Chen</b></div>
-                    <p>Email: <a href="mailto:chenchen2001@shu.edu.cn" title="点击向我发邮件" class="mail">chenchen2001@shu.edu.cn</a></p>
+                    <p>Email: <a href="mailto:" title="点击向我发邮件" class="mail">Your email here</a></p>
                     <a href="https://github.com/Chenchen2001" title="前往我的Github">
                         <div class="github">
                             <div class="github-inner">
@@ -66,16 +69,37 @@
         </main>
 
         <footer>
+            <span id="foot">
+            <div id="visit">当前累计访问量：</div>
             <div>推荐使用基于Chromium内核的Microsoft<sup>©</sup>Edge浏览器以获得最佳兼容性</div>
-            <div>推荐分辨率：1024×768或以上的16:9设备</div>
-            <div class="copyright">©2022 - 2023 By Peter_Chen</div>
+            <div>不为移动端设计，请使用PC或平板访问</div>
+            <div>推荐分辨率：1366×768或以上的16:9/16:10设备</div>
+            <div class="copyright">©2022 - 2023 By Peter Chen</div>
+            </span>
             <div class="recordInfo">
-                <a class="imp" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=????" target="_blank">沪公网安备????号(审核中)</a>
+                <img src="./pics/gxb.png" class="police"><a class="imp" href="https://beian.miit.gov.cn" target="_blank"> 你的备案号 </a>
+                <!-- &nbsp;|&nbsp;
+                <img src="./pics/police.png" class="police"><a class="imp" href="#" target="_blank"> 你的公安审批号 </a> -->
             </div>
         </footer>
     </div>
-    
-
-    
 </body>
+<script>
+    window.onload = function (){
+            // axios.get('Your Request API', {}).then(res=>{
+            //     $("#visit").append(res.data);
+            // })
+            $("#visit").append("Please set your counter API.");
+        }
+    $(".blog-name").click(function(){
+        alert("点我的标题干嘛？");
+    })
+    $("#foot").click(function(){
+        alert("每次进入首页都会为访问量+1！顺便大力推荐微软的新Edge！")
+    })
+    $(".portrait").click(function(){
+        alert("这个是Github默认头像之一，我也不知道这是啥。")
+    })
+    
+</script>
 </html>
